@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ElementModel.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package spaceinvaders.model;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import spaceinvaders.view.ElementViewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.HashSet;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class ElementModel implements ShotSubjectModel {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    protected PositionModel position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    protected ElementViewer viewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public ElementModel(PositionModel position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.position = position;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getX() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_16'>1</a>
+<span>
+
+1. getX : replaced int return with 0 for spaceinvaders/model/ElementModel::getX &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return position.getX();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getY() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_20'/>
+20
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_20'>1</a>
+<span>
+
+1. getY : replaced int return with 0 for spaceinvaders/model/ElementModel::getY &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return position.getY();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public PositionModel getPosition() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_24'>1</a>
+<span>
+
+1. getPosition : replaced return value with null for spaceinvaders/model/ElementModel::getPosition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_27'/>
+27
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_27'>1</a>
+<span>
+
+1. getWidth : replaced int return with 0 for spaceinvaders/model/ElementModel::getWidth &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    public int getWidth() { return 1; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_29'>1</a>
+<span>
+
+1. getHeight : replaced int return with 0 for spaceinvaders/model/ElementModel::getHeight &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    public int getHeight() { return 1; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract void damage();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract boolean isAlive();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public ElementViewer getViewer() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_35'/>
+35
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_35'>1</a>
+<span>
+
+1. getViewer : replaced return value with null for spaceinvaders/model/ElementModel::getViewer &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return viewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setViewer(ElementViewer viewer) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.viewer = viewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isTangible() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_41'>1</a>
+<span>
+
+1. isTangible : replaced boolean return with false for spaceinvaders/model/ElementModel::isTangible &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean canIMove(boolean goingLeft) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_44'>1</a>
+<span>
+
+1. canIMove : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (goingLeft) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_45'>3</a>
+<span>
+
+1. canIMove : changed conditional boundary &rarr; KILLED<br/>
+
+2. canIMove : negated conditional &rarr; KILLED<br/>
+
+3. canIMove : replaced boolean return with true for spaceinvaders/model/ElementModel::canIMove &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return this.getX() &#62; 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_47'>3</a>
+<span>
+
+1. canIMove : changed conditional boundary &rarr; KILLED<br/>
+
+2. canIMove : negated conditional &rarr; KILLED<br/>
+
+3. canIMove : replaced boolean return with true for spaceinvaders/model/ElementModel::canIMove &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return this.getX() &#60; 49;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void move(int direction) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        switch (direction) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case 0: // left</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_53'>2</a>
+<span>
+
+1. move : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. move : removed call to spaceinvaders/model/PositionModel::setX &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                this.position.setX(this.position.getX()-1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case 1: // right</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_56'>2</a>
+<span>
+
+1. move : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. move : removed call to spaceinvaders/model/PositionModel::setX &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                this.position.setX(this.position.getX()+1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            case 2: // down</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_59'/>
+59
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_59'>2</a>
+<span>
+
+1. move : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. move : removed call to spaceinvaders/model/PositionModel::setY &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                this.position.setY(this.position.getY()+1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void addObserver(ShotObserverModel observer){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        observers.add(observer);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void removeObserver(ShotObserverModel observer){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        observers.remove(observer);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void clearObservers(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_72'/>
+72
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_72'>1</a>
+<span>
+
+1. clearObservers : removed call to java/util/HashSet::clear &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        observers.clear();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void notifyObservers(ShotModel shot){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for(ShotObserverModel observer : observers){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_77'/>
+77
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_77'>1</a>
+<span>
+
+1. notifyObservers : removed call to spaceinvaders/model/ShotObserverModel::update &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            observer.update(shot);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public HashSet&#60;ShotObserverModel&#62; getObservers() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_81'/>
+81
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_81'>1</a>
+<span>
+
+1. getObservers : replaced return value with null for spaceinvaders/model/ElementModel::getObservers &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return observers;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean collideWith(ShotModel shot){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_84'/>
+84
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_84'>2</a>
+<span>
+
+1. collideWith : negated conditional &rarr; KILLED<br/>
+
+2. collideWith : replaced boolean return with true for spaceinvaders/model/ElementModel::collideWith &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return isTangible() &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_85'/>
+85
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_85'>2</a>
+<span>
+
+1. collideWith : changed conditional boundary &rarr; KILLED<br/>
+
+2. collideWith : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                (shot.getX() &#62;= position.getX() &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_86'/>
+86
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_86'>4</a>
+<span>
+
+1. collideWith : changed conditional boundary &rarr; KILLED<br/>
+
+2. collideWith : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. collideWith : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+4. collideWith : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                shot.getX() &#60;= position.getX() + getWidth() - 1 &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_87'/>
+87
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_87'>2</a>
+<span>
+
+1. collideWith : changed conditional boundary &rarr; KILLED<br/>
+
+2. collideWith : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                shot.getY() &#62;= position.getY() &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_88'/>
+88
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_88'>4</a>
+<span>
+
+1. collideWith : changed conditional boundary &rarr; KILLED<br/>
+
+2. collideWith : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. collideWith : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+4. collideWith : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                shot.getY() &#60;= position.getY() + getHeight() - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7a8341c1_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getX<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getX()]</span></span> replaced int return with 0 for spaceinvaders/model/ElementModel::getX &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_20'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getY<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getY()]</span></span> replaced int return with 0 for spaceinvaders/model/ElementModel::getY &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPosition<br/><b>Killed by : </b>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:ShipModelTest()]</span></span> replaced return value with null for spaceinvaders/model/ElementModel::getPosition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_27'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getWidth<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:getWidth()]</span></span> replaced int return with 0 for spaceinvaders/model/ElementModel::getWidth &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getHeight<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getHeight()]</span></span> replaced int return with 0 for spaceinvaders/model/ElementModel::getHeight &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_35'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getViewer<br/><b>Killed by : </b>spaceinvaders.AlienViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienViewerTest]/[method:getModel()]</span></span> replaced return value with null for spaceinvaders/model/ElementModel::getViewer &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isTangible<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:isTangible()]</span></span> replaced boolean return with false for spaceinvaders/model/ElementModel::isTangible &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove2()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove2()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove2()]</span></span> replaced boolean return with true for spaceinvaders/model/ElementModel::canIMove &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove3()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove2()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canIMove<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove3()]</span></span> replaced boolean return with true for spaceinvaders/model/ElementModel::canIMove &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveLeft()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>move<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveLeft()]</span></span> removed call to spaceinvaders/model/PositionModel::setX &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveRight()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>move<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveRight()]</span></span> removed call to spaceinvaders/model/PositionModel::setX &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveDown()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>move<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveDown()]</span></span> removed call to spaceinvaders/model/PositionModel::setY &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>clearObservers<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:addObserver()]</span></span> removed call to java/util/HashSet::clear &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_77'>77</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_77'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>notifyObservers<br/><b>Killed by : </b>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:notifyObserversTest()]</span></span> removed call to spaceinvaders/model/ShotObserverModel::update &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_81'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getObservers<br/><b>Killed by : </b>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:removeObserverTest()]</span></span> replaced return value with null for spaceinvaders/model/ElementModel::getObservers &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_84'>84</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_84'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith3()]</span></span> replaced boolean return with true for spaceinvaders/model/ElementModel::collideWith &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_85'>85</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_85'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_86'>86</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_86'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith2()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_87'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7a8341c1_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7a8341c1_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith2()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>collideWith<br/><b>Killed by : </b>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:addedObservers()] (2 ms)</li><li>spaceinvaders.ArenaViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaViewerTest]/[method:draw1()] (81 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:isTangible()] (3 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith5()] (5 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getX()] (2 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove()] (2 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:incrementLevelTest3()] (2 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey3()] (376 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove4()] (2 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest1_2()] (3 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveRight()] (1 ms)</li><li>spaceinvaders.ArenaViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaViewerTest]/[method:draw2()] (70 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest()] (4 ms)</li><li>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith2()] (3 ms)</li><li>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:getHeight()] (2 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:collideWith1()] (0 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getY()] (2 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost3()] (14 ms)</li><li>spaceinvaders.ShipControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipControllerTest]/[method:processUpArrowKeyTest()] (17 ms)</li><li>spaceinvaders.ShipControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipControllerTest]/[method:processSpaceKeyTest()] (14 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove3()] (1 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith4()] (5 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest6()] (15 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith2()] (3 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost4()] (3035 ms)</li><li>spaceinvaders.AlienGroupModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienGroupModelTest]/[method:canIMoveTest()] (5 ms)</li><li>spaceinvaders.AlienViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienViewerTest]/[method:getModel()] (2 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:collideWith2()] (1 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest5()] (1320 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith3()] (3 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest7()] (3029 ms)</li><li>spaceinvaders.AlienGroupViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienGroupViewerTest]/[method:drawTest()] (290 ms)</li><li>spaceinvaders.AlienGroupModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienGroupModelTest]/[method:move0Test()] (5 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveDown()] (1 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:removeObserverTest()] (0 ms)</li><li>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:fireTest()] (71 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove5()] (2 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost5()] (3041 ms)</li><li>spaceinvaders.AlienGroupModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienGroupModelTest]/[method:move2Test()] (3 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:addObserverTest()] (2 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:getHasRanTest2()] (43 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTestsCheckDead()] (10 ms)</li><li>spaceinvaders.AlienViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienViewerTest]/[method:draw()] (4 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest3()] (25 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTestsCheckShot()] (42 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost6()] (3051 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:checkCollisions()] (20 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest4()] (3178 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey6()] (111 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:removeObserver()] (3 ms)</li><li>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:collideWith()] (2 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:notifyObserversTest()] (3 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest1()] (18 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith7()] (112 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getPosition()] (3 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getViewer()] (3 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLostTest2()] (2 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith()] (3 ms)</li><li>spaceinvaders.ProtectionViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.ProtectionViewerTest]/[method:drawNumber()] (6 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:ShipModelTest()] (2 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getHeight()] (1 ms)</li><li>spaceinvaders.ProtectionViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.ProtectionViewerTest]/[method:draw()] (7 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:canIMove2()] (1 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest6_2()] (3032 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:notifyObservers()] (6 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest2()] (10 ms)</li><li>spaceinvaders.ShipShotViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipShotViewerTest]/[method:draw()] (3 ms)</li><li>spaceinvaders.AlienShotViewerTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienShotViewerTest]/[method:draw()] (40 ms)</li><li>spaceinvaders.AlienGroupModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienGroupModelTest]/[method:move1Test()] (3 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:moveLeft()] (2 ms)</li><li>spaceinvaders.ShipModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ShipModelTest]/[method:fireTest()] (9 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:collideWith6()] (6 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:addObserver()] (1 ms)</li><li>spaceinvaders.AlienModelTest.[engine:junit-jupiter]/[class:spaceinvaders.AlienModelTest]/[method:getWidth()] (1 ms)</li><li>spaceinvaders.ElementModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ElementModelTest]/[method:getWidth()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.9.4
+
+</body>
+</html>

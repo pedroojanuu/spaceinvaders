@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>MenuModel.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package spaceinvaders.model.menu;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import spaceinvaders.view.menu.MenuViewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public abstract class MenuModel {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    protected MenuViewer viewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public MenuViewer getViewer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_8'/>
+8
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_8'>1</a>
+<span>
+
+1. getViewer : replaced return value with null for spaceinvaders/model/menu/MenuModel::getViewer &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return viewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setViewer(MenuViewer viewer){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.viewer = viewer;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4c19d42e_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4c19d42e_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4c19d42e_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getViewer<br/><b>Killed by : </b>spaceinvaders.menu.MenuModelTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.MenuModelTest]/[method:getViewerTest()]</span></span> replaced return value with null for spaceinvaders/model/menu/MenuModel::getViewer &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>spaceinvaders.menu.StartInLevelMenuCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.StartInLevelMenuCommandTest]/[method:executeTest2()] (2 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey7()] (189 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey3()] (376 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey1()] (21 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost6()] (3051 ms)</li><li>spaceinvaders.menu.ControlsCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.ControlsCommandTest]/[method:executeTest()] (6 ms)</li><li>spaceinvaders.menu.OptionsCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.OptionsCommandTest]/[method:executeTest2()] (1 ms)</li><li>spaceinvaders.menu.StartInLevelMenuCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.StartInLevelMenuCommandTest]/[method:executeTest()] (2 ms)</li><li>spaceinvaders.menu.ExitToMenuCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.ExitToMenuCommandTest]/[method:executeTest()] (5 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest4()] (3178 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey6()] (111 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey2()] (4 ms)</li><li>spaceinvaders.menu.HighScoreCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.HighScoreCommandTest]/[method:executeTest2()] (2 ms)</li><li>spaceinvaders.GameModelTest.[engine:junit-jupiter]/[class:spaceinvaders.GameModelTest]/[method:getState()] (1 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost4()] (3035 ms)</li><li>spaceinvaders.menu.ExitToMenuCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.ExitToMenuCommandTest]/[method:executeTest2()] (1 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey5()] (1 ms)</li><li>spaceinvaders.GameModelTest.[engine:junit-jupiter]/[class:spaceinvaders.GameModelTest]/[method:runTest()] (2 ms)</li><li>spaceinvaders.menu.MenuModelTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.MenuModelTest]/[method:getViewerTest()] (14 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest5()] (1320 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest6_2()] (3032 ms)</li><li>spaceinvaders.menu.HighScoreCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.HighScoreCommandTest]/[method:executeTest()] (6 ms)</li><li>spaceinvaders.menu.ControlsCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.ControlsCommandTest]/[method:executeTest2()] (13 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:runTest7()] (3029 ms)</li><li>spaceinvaders.menu.OptionsCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.OptionsCommandTest]/[method:executeTest()] (1 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey8()] (18 ms)</li><li>spaceinvaders.ArenaControllerTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaControllerTest]/[method:processKey4()] (22 ms)</li><li>spaceinvaders.ArenaModelTest.[engine:junit-jupiter]/[class:spaceinvaders.ArenaModelTest]/[method:isLost5()] (3041 ms)</li><li>spaceinvaders.menu.InfoCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.InfoCommandTest]/[method:executeTest()] (1 ms)</li><li>spaceinvaders.menu.InfoCommandTest.[engine:junit-jupiter]/[class:spaceinvaders.menu.InfoCommandTest]/[method:executeTest2()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.9.4
+
+</body>
+</html>
