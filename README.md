@@ -1,5 +1,7 @@
 ## LDTS_l01g06 - Space Invaders
 
+Done with [João Tomás Teixeira](https://github.com/up202108738) and [Pedro Lima](https://github.com/up202108806).
+
 Space Invaders is a fixed shooter in which the player moves a laser cannon horizontally across the bottom of the screen and fires at aliens overhead.
 The aliens progressively move towards the bottom of screen.
 The goal is to eliminate all the aliens by shooting them. While the player has three lives, the game ends immediately if the invaders reach the bottom of the screen.
